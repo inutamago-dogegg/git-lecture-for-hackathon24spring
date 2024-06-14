@@ -14,21 +14,21 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input .GetKeyDown (KeyCode.RightArrow))
+        if(Input .GetKey (KeyCode.RightArrow))
         {
-            transform.Translate(Vector3.right);
+            transform.Translate(Vector3.right*playerspeed);
         }
-         if(Input .GetKeyDown (KeyCode.LeftArrow))
+         if(Input .GetKey (KeyCode.LeftArrow))
         {
-            transform.Translate(Vector3.left);
+            transform.Translate(Vector3.left*playerspeed);
         }
-         if(Input .GetKeyDown (KeyCode.UpArrow))
+         if(Input .GetKey (KeyCode.UpArrow))
         {
-            transform.Translate(Vector3.up);
+            transform.Translate(Vector3.up*playerspeed);
         }
-         if(Input .GetKeyDown (KeyCode.DownArrow))
+         if(Input .GetKey (KeyCode.DownArrow))
         {
-            transform.Translate(Vector3.down);
+            transform.Translate(Vector3.down*playerspeed);
         }
        
     }
