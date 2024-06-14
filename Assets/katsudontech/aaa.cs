@@ -44,6 +44,6 @@ public class aaa : MonoBehaviour
            v.y *= 2f;
       }
         
-      _rb.velocity = new Vector2(v.x * walkSpeed, v.y);
+      _rb.velocity = v*walkSpeed;
     }
 }
